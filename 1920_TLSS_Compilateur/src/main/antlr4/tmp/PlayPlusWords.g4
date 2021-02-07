@@ -8,12 +8,19 @@ RPAR: ')';
 COMMA: ',';
 PLUS: '+';
 MINUS: '-';
+QUOT: '\'';
+DOUBLEQUOT: '"';
+DASH: '_';
+COLON: ':';
+SEMICOLON: ';';
+QUESTION: '?';
+EXCALMATION: '!';
 
 // Identifiers
 
 ID: LETTER (LETTER | DIGIT)* ;
 
-NUMBER: (DIGIT)+;
+NUMBER: MINUS? (DIGIT)+;
 
 fragment LETTER: 'A'..'Z' | 'a'..'z' ;
 fragment DIGIT: '0'..'9' ;
